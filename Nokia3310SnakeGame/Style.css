@@ -7,7 +7,7 @@
     border-style: solid;
   }
   .start{
-    background-color: rgb(181, 145, 182);
+    background-color: rgb(169, 142, 199);
     width: 100px;
     height: 50px;
     margin-left: 45%;
@@ -16,12 +16,12 @@
   }
 
   .rules{
-    width: 100px;
-    height: 50px;
-    border-style: solid;
-    margin-top: 20%;
-    margin-left: 45%;
-    margin-right: 45%;
+    width: 45%;
+    height: 50%;
+    border-style: groove;
+    margin-top: 10%;
+    margin-left: 26%;
+    margin-right: 26%;
   }
   
   .grid div {

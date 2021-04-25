@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const squares = document.querySelectorAll('.grid div')
   const scoreDisplay = document.querySelector('span')
   const startBtn = document.querySelector('.start')
+  const rules = document.querySelector('.rules')
 
   const width = 10
   let currentIndex = 0
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function startGame() {
     startBtn.style.display = "none";
+    rules.style.display = "none";
     currentSnake.forEach(index => squares[index].classList.remove('snake'))
     squares[appleGIndex].classList.remove('appleg')
     squares[appleEIndex].classList.remove('applee')
