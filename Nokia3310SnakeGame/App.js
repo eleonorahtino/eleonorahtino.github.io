@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentSnake[0] + direction].classList.contains('snake') ||
       squares[currentSnake[0]].classList.contains('applee')
     ) {
+      alert("GAME OVER. Please refresh the page!")
       return clearInterval(interval)
     }
 
@@ -89,9 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         var g = 51
         var b = 153
 
-        var re = 102
+        var re = 153
         var ge = 0
-        var be = 102
+        var be = 153
 
         break;
       case 1: //red
@@ -100,14 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
         var b = 0
 
         var re = 204
-        var ge = 51
+        var ge = 0
         var be = 0
 
         break;
       case 2: //yellow
         var r = 255
         var g = 255
-        var b = 102
+        var b = 0
 
         var re = 255
         var ge = 204
@@ -116,12 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
       case 3: //pink
         var r = 255
-        var g = 0
+        var g = 102
         var b = 255
 
-        var re = 204
+        var re = 255
         var ge = 0
-        var be = 153
+        var be = 255
 
         break;
       case 4: //blue
@@ -131,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         var re = 0
         var ge = 0
-        var be = 102
+        var be = 204
 
         break;
     }
