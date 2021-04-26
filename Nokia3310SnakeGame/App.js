@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentSnake[0]].classList.contains('applee')
     ) {
       return clearInterval(interval)
-      //game over
     }
 
     const tail = currentSnake.pop()
