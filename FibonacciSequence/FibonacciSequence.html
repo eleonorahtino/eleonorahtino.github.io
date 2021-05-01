@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #out {
+      color: red;
+      font-size: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 10px;
+      background-color: #df64df;
+      padding: 10px;
+    }
+
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid black;
+      text-align: center;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 style="text-align: center;">Fibonacci Sequence Grid</h2>
+  <p style="color: blueviolet;">Group Members: 
+    <ul>
+      <li>Eleonora Accatino</li>
+      <li>Matteo Burello</li>
+      <li>Paolo Orsi</li>
+    </ul>
+  </p>
+  <p id="out"></p>
+
+  <div class="grid-container">
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+
+  </div>
+  <p style="color: blueviolet;"> <a href="FibonacciSequence.html">HERE</a> you can find my post about the Fibonacci Sequence</p>
+  <script>
+    var fib = [];
+    var i;
+    var row;
+    fib[0] = 0;
+    fib[1] = 1;
+    for (i = 2; i <= 25; i++) {
+      fib[i] = fib[i - 2] + fib[i - 1];
+    }
+
+    for (i = 0; i <= fib.length; i++) {
+      var mydiv = document.getElementsByClassName("demo");
+      mydiv[i].innerHTML = fib[i];
+    }
+  </script>
+</body>
+
+</html>
